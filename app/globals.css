@@ -1,0 +1,41 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+.nav-item .active {
+  background-color: #007bff;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem; /* Добавьте отступы для улучшения внешнего вида */
+}
+
+.nav-link .nav-text {
+  font-size: 0.85rem;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem; /* Расстояние между иконкой и текстом */
+}
+
+.icon-container .icon {
+  width: 36px; /* Размер иконки */
+  height: 36px; /* Размер иконки */
+}
