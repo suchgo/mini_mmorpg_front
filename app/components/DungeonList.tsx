@@ -16,7 +16,7 @@ interface DungeonListProps {
 
 const DungeonList: React.FC<DungeonListProps> = ({dungeons}) => {
     return (
-        <Container className="mt-4">{window.Telegram.WebApp.version}
+        <Container className="mt-4">{window.Telegram.WebApp.initDataUnsafe.user?.first_name}
             <Row className="g-3">
                 {dungeons.map(dungeon => (
                     <Col key={dungeon.id} xs={12} sm={6} md={3}>

@@ -21,7 +21,7 @@ const TelegramProvider: React.FC<{ children: React.ReactNode }> = ({ children })
                 <div className="loading-container">
                     <p>Загрузка...</p>
                 </div>
-            ) : !telegram.version ? (
+            ) : !telegram.initDataUnsafe.user ? (
                 <NonInTelegram />
             ) : children}
         </TelegramContext.Provider>
